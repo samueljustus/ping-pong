@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+    <title>ping pong</title>
+</head>
+<body>
+    <section class="section">
+        <div class="container">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card">
+                    <figure class="image">
+                        <img src="https://img.freepik.com/free-vector/realistic-table-tennis-background_52683-45883.jpg?w=740&t=st=1697288832~exp=1697289432~hmac=bbc78726082e6fafce648a39bdb5c9a01fc6710e60a34dc89a0aee074bda2871">
+                      </figure>
+                    <header class="card-header">
+                      <p class="card-header-title">
+                        ping pong score keeper
+                      </p>
+                    </header>
+                    <div class="card-content">
+                      <div class="content">
+                        <h1 class="is-size-3"><span id="p1display">0</span> to <span id="p2display">0</span></h1>
+                        <p class="mt-0">use the button below to keep score</p>
+                        <label for="playto" class="label is-normal is-inline">playing To</label>
+                        <div class="select is-rounded select is-small">
+                            <select name="" id="playto">
+                                <option value="3">3</option>
+                                <option value="5">5</option>
+                                <option value="7">7</option>
+                                <option value="11">11</option>
+                                <option value="21">21</option>
+                            </select>
+                        </div>
+                      </div>
+                    </div>
+                    <footer class="card-footer">
+                        <button id="p1button" class="button card-footer-item button is-primary">+1 player one</button>
+                        <button id="p2button" class="button card-footer-item button is-link">+1 player two</button>
+                        <button id="reset" class="button card-footer-item button is-danger">Reset</button>
+                    </footer>
+                  </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="app.js"></script>
+</body>
+</html>
